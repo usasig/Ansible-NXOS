@@ -1,7 +1,7 @@
 ---
 
-  - name: Upgrade NXOS version from 7.0(3)I5(1) to 7.0(3)I6(1)
-    hosts: leaves
+  - name: Upgrade NXOS version from 7.0(3)I7(1) to 7.0(3)I7(3)
+    hosts: leafs
     connection: local
     gather_facts: no
 
@@ -76,5 +76,5 @@
           - name: Assert That It is Running The Desired Image
             assert:
               that:
-                - output['stdout'][0]['kickstart_ver_str'] == '7.0(3)I6(1)'
+                - output['stdout'][0]['kickstart_ver_str'] == '7.0(3)I7(3)'
 

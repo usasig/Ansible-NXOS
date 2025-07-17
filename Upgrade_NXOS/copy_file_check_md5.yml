@@ -1,7 +1,7 @@
 ---
 
   - name: Copy Image To All Devices And Check MD5 Sum
-    hosts: leaves
+    hosts: leafs
     connection: local
     gather_facts: no
 
@@ -19,10 +19,6 @@
           provider: "{{ nxos_provider }}"
         with_items:
         - "{{ image }}"
-
-      # - name: Copy From File Server to All Switches
-      #   synchronize: src=/copy/from_File_Server dest=/copy/to_Switches
-      #   delegate_to: File Server
 
 
       - name: Check MD5 Sum

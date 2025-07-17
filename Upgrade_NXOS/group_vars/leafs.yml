@@ -1,0 +1,7 @@
+---
+
+image:
+  - { file_name: nxos.7.0.3.I7.3.bin, kickstart: 7.0(3)I7(3), md5: 0b81e1dc6289c0dee218640626f40842 }
+
+existing_kickstart: 7.0(3)I7(1)
+
